@@ -34,14 +34,32 @@
         }
         .container{
             margin-top: 200px;
-            margin-left: 300px;
+            margin-left: 200px;
         }
+
         .left{
-            font-size: 30px;
+           
+        animation: anim 0.5s ease-in-out infinite alternate;
+        padding: 10px;
+        font-size: 30px;
+        
+        
+
+
         }
-        h3{
-            padding-top: 30px;
+        @keyframes anim{
+       from{
+            color:  rgb(123, 123, 161);
         }
+        to{
+            color: white;
+        }
+
+    }
+    .right{
+        
+    }
+
         
     </style>
 </head>
@@ -61,9 +79,13 @@
      
      <section id="about">
         <div class="container">
-          <div class="left"><h1>Hey,I am anamika</h1> </div>
+          <div class="left">
+            <h1>Hey,I am anamika</h1>
+         </div>
         
-            <div class="right"><p>and i am a web designer</p> </div>
+            <div class="right">
+                <p>and i am a web designer</p> 
+            </div>
         
 
            
