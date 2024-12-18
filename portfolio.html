@@ -9,12 +9,13 @@
             margin: 0px;
             padding: 0px;
         }
-        header{
+        #home header{
             background-color: rgb(0, 0,33);
             color: white;
             display: flex;
-            justify-content:center;
+            justify-content:space-between;
             height: 70px;
+           
 
         }
         ul{
@@ -47,7 +48,8 @@
             color: aqua;
         }
         body{
-            background-color: rgb(140, 140, 241);
+            
+            height: 500px;
         }
         .container{
             margin-top: 200px;
@@ -56,7 +58,7 @@
 
         .left{
            
-        animation: anim 5s ease-in-out alternate infinite;
+       
         padding: 10px;
         font-size: 30px;
        
@@ -65,34 +67,101 @@
 
 
         }
-        @keyframes anim{
-       from{
-            color:  rgb(123, 123, 161);
-        }
-        to{
-            color: white;
-        }
+       
 
-    }
+    
     h3{
         padding: 10px;
         color: rgb(28, 28, 161);
     }
+
+    #project h1{
+        
+            color: rgb(54, 54, 161);
+        }
+      
+    img{
+        height: 200px;
+        width: 200px;
+        
+        border: white;
+        
+      
+      
+      
+        margin: 10px;
+
+
+    }
+    .main{
+        display: flex;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .a{
+        margin: 20px;
+    }
+   #contactbody{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+       
+   
+    
+    
+    input{
+        height: 30px;
+        width: 500px;
+        
+    }
+    .mt-10{
+        margin: 10px;
+    }
+    
+    
+    button{
+        background-color: rgb(36, 201, 77);
+        height: 40px;
+        width: 200px;
+        color: white;
+       
+        border: rgb(66, 36, 201);
+    }
+    
+   
+    
+   
+
+  
+        
+       
+    
  
 
         
     </style>
 </head>
 <body>
+    <section id="home" style="background-color: rgb(99, 99, 197); 
+    height: 700px; background-attachment: fixed;"><br>
+    <hr>
      <header>
+        <h1 style="margin-top: 20px;">My porfolio</h1>
        
        
        
             <ul>
                 
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><h4>Contact</li></h4>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact"><h4>Contact</a></li></h4>
                 
                 
                 <li><a href="resume.html">Resume</a></li>
@@ -101,16 +170,18 @@
         
      </header>
      
-     <section id="about">
+     
         <div class="container">
           <div class="left">
-            <h1>Hello, people</h1>
+            <h1 style="color: rgb(23, 35, 143);">Hello, people</h1>
          </div>
         
             
-                <h3>My name is anamika,
+                <div style="color: white;">My name is anamika,
                 And i am a pationate
-                 web designer</h3> 
+                 web designer <br>
+                I am a data science student </div>
+                
 
             
                 
@@ -118,7 +189,103 @@
 
            
         </div>
-     </section>
+    </section>
+        <section id="about" style="background-color: aliceblue; height: 700px;">
+            <h1 style="color: rgb(36, 36, 82); font-size: 30px;">About Me
+
+            </h1><br><hr>
+         
+            <h1 style="margin-left: 500px; margin-top: 250px; color: blue;">Hi I am anamika malviya</h1>
+           <p style="text-align: center;margin-top: 20px; font-family: 'Lucida Sans', 'Lucida
+            Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-se
+            rif; ">
+            <i>My name is anamika malviya and i am a web designer i am have completed my scooling<br>
+
+                a student and aspiring web developer with a growing passion for HTML, CSS, JavaScript <br>and Tailwind CSS.
+                I'm learning to build clean, responsive websites that are both functional and visually <br>appealing.
+                I enjoy experimenting with different web technologies and constantly challenge myself to<br> improve
+                my coding skills.<br>
+                Through my projects, I’ve learned how to structure websites with HTML, style<br> them with CSS,
+                and add interactivity with JavaScript. Tailwind CSS has helped me create beautiful,<br> custom
+                designs quickly, and I'm excited to continue exploring all the possibilities web <br>development
+                has to offer.
+                As a student, I’m always looking to learn new things and develop my skills further. <br>Take a
+                look at my portfolio to see the projects I’ve been working on!    </i>    
+           </p>
+                
+
+
+
+
+
+        </section>
+        <section id="project" style="height: 700px; background-color: beige;">
+            <h1 style="font-size: 30px;">projects</h1><br>
+            <hr>
+            <div class="main">
+        
+                <div class="a">
+                <img src="img.jpeg" alt=""><br>
+                <a href="facebook.html">Facebook</a>
+            <br>
+            
+                <img src="calc2.jpeg" alt=""><br>
+                <a href="calculator.html">Calculator</a>
+                
+            </div>
+            <div class="c">
+                <img src="reg.jpeg" alt=""><br>
+               
+                <a href="student registration.html">student registration</a>
+                
+           
+            <br>
+            
+                <img src="linked.png" alt=""><br>
+                <a href="linked in.html">linked in</a>
+                
+            </div>
+            
+           
+           
+            
+           
+            </div>
+
+
+        </section>
+        <h1 style="color: rgb(41, 41, 92);">contact me</h1>
+        <br>
+        <hr>
+        <section id="contact" style="  height :700px; text-align: center;
+        margin-top: 100px;">
+           
+            
+            <div class="box">
+                <H2>Reach us</H2> 
+                   
+                   <input class="mt-10" placeholder="enter name"><br>
+                  
+                   <input class="mt-10" placeholder="enter email"><br>
+           
+                   <div class="a">
+                   <input class="mt-10" placeholder="message" style="height: 100px; 
+                   "><br>
+               
+                   <button>send message</button>
+               
+           
+           
+                   
+                   
+           
+                  
+                   
+                   </div>
+           </div>
+        </section>
+
+       
     
 </body>
 </html>
