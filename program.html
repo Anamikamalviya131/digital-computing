@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         var index = 0
+function changebackgroundcolor() {
+
+    console.log("working")
+    const colors = ['#ff5733', '#33ff57', '#3357ff', '#ff33a1', '#ffff33'];
+
+    document.body.style.backgroundColor = colors[index];
+    index = index + 1 
+    if 
+    (index == 4) index = 0
+}
+    </script>
+    <style>
+
+body{
+    text-align: center;
+    padding: 50px;
+    transition: background-color 0.5s ease;
+
+
+   } 
+button{
+    border: none;
+    background-color: rgb(9, 134, 9);
+   color: white;
+   padding: 20px 30px;
+   
+}
+    </style>
+    
+</head>
+<body>
+    <h1>change background color</h1>
+    <button onclick="changebackgroundcolor()">change color</button>
+</body>
+</html>
